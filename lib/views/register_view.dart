@@ -48,16 +48,7 @@ class _RegisterViewState extends State<RegisterView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-    
-      body: FutureBuilder(
-        future: Firebase.initializeApp(
-          options: DefaultFirebaseOptions.currentPlatform,
-        ),
-        builder: (context, snapshot) {
-          switch (snapshot.connectionState) {
-            case ConnectionState.done:
-              return Column(
+    return Column(
                 children: [
                   TextField(
                     controller: _email,
@@ -102,11 +93,5 @@ class _RegisterViewState extends State<RegisterView> {
                   ),
                 ],
               );
-            default:
-              return const Text('Not yet completed');
-          }
-        },
-      ),
-    );
   }
 }

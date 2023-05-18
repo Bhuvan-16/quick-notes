@@ -1,7 +1,8 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:notenow/constants/routes.dart';
+import 'package:notenow/services/auth/auth_exceptions.dart';
+import 'package:notenow/services/auth/auth_service.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -78,35 +79,33 @@ class _LoginViewState extends State<LoginView> {
               final password = _password.text;
 
               try {
-                await FirebaseAuth.instance.signInWithEmailAndPassword(
-                    email: email, password: password);
-                final user = FirebaseAuth.instance.currentUser;
-                if (user?.emailVerified ?? false) {
+                await AuthService.firebase().logIn(
+                  email: email,
+                  password: password,
+                );
+                final user = AuthService.firebase().currentUser;
+                if (user?.isEmailVerified ?? false) {
                   Navigator.of(context).pushNamedAndRemoveUntil(
                     notesRoute,
                     (route) => false,
                   );
                 } else {
+                  AuthService.firebase().sendEmailVerificaiton();
                   Navigator.of(context).pushNamedAndRemoveUntil(
                     verifyEmailRoute,
                     (route) => false,
                   );
                 }
-              } on FirebaseAuthException catch (e) {
-                var error = e.code;
-                if (error == 'user-not-found') {
-                  toastMessage(_usernotfound);
-                } else if (error == 'invalid-email') {
-                  toastMessage(_invaildemail);
-                } else if (error == 'user-disabled') {
-                  toastMessage(_userdisabled);
-                } else if (error == 'wrong-password') {
-                  toastMessage(_wrongpassword);
-                } else {
-                  toastMessage('Error : ${e.code}');
-                }
-              } catch (e) {
-                toastMessage('Error ${e.toString()}');
+              } on UserNotFoundAuthException {
+                toastMessage(_usernotfound);
+              } on WrongPasswordAuthException {
+                toastMessage(_wrongpassword);
+              } on InvalidEmailAuthException {
+                toastMessage(_invaildemail);
+              } on UserDisabledAuthException {
+                toastMessage(_userdisabled);
+              } on GenericAuthException {
+                toastMessage('Authentication Error');
               }
             },
             child: const Text('Login'),
@@ -119,7 +118,7 @@ class _LoginViewState extends State<LoginView> {
               );
             },
             child: const Text("Don't have an account? Register now"),
-          )
+          ),
         ],
       ),
     );

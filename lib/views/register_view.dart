@@ -1,7 +1,8 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:notenow/constants/routes.dart';
+import 'package:notenow/services/auth/auth_exceptions.dart';
+import 'package:notenow/services/auth/auth_service.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});
@@ -77,28 +78,22 @@ class _RegisterViewState extends State<RegisterView> {
               final email = _email.text;
               final password = _password.text;
               try {
-                await FirebaseAuth.instance
-                    .createUserWithEmailAndPassword(
-                        email: email, password: password);
-                final user = FirebaseAuth.instance.currentUser;
-                await user?.sendEmailVerification();
+
+                await AuthService.firebase().createUser(email: email, password: password);
+              
+                AuthService.firebase().sendEmailVerificaiton();
 
                 Navigator.of(context).pushNamed(verifyEmailRoute);
-              } on FirebaseAuthException catch (e) {
-                var error = e.code;
-                if (error == 'email-already-in-use') {
-                  toastMessage(_emailalreadyinuse);
-                } else if (error == 'invalid-email') {
-                  toastMessage(_invaildemail);
-                } else if (error == 'operation-not-allowed') {
-                  toastMessage(_operationnotallowed);
-                } else if (error == 'weak-password') {
-                  toastMessage(_weakpassword);
-                } else{
-                  toastMessage('Error : ${e.code}');
-                }
-              } catch (e) {
-                toastMessage('Error : ${e.toString()}');
+              } on EmailAlreadyInUseAuthException {
+                toastMessage(_emailalreadyinuse);
+              } on InvalidEmailAuthException {
+                toastMessage(_invaildemail);
+              } on OperationNotAllowedAuthException {
+                toastMessage(_operationnotallowed);
+              } on WeakPasswordAuthException {
+                toastMessage(_weakpassword);
+              } on GenericAuthException {
+                toastMessage('Authentication Error');
               }
             },
             child: const Text('Register'),

@@ -2,8 +2,26 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/_fe_analyzer_shared-61.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "_flutterfire_internals",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/_flutterfire_internals-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/analyzer-5.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.4.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -54,6 +72,18 @@
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/coverage-1.6.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "crypto",
@@ -170,6 +200,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/frontend_server_client-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/glob-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "google_fonts",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-4.0.4",
       "packageUri": "lib/",
@@ -182,6 +224,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "http_multi_server",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
@@ -190,6 +238,12 @@
     {
       "name": "intl",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.17.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -206,6 +260,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "logging",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.13",
       "packageUri": "lib/",
@@ -220,6 +280,24 @@
     {
       "name": "meta",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -278,16 +356,64 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "process",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/process-4.2.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
+      "name": "pub_semver",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_static-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_web_socket-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///G:/Flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/source_map_stack_trace-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/source_maps-0.10.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "source_span",
@@ -320,8 +446,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "test",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/test-1.22.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "test_api",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.4.16",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/test_core-0.4.20",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -338,6 +476,30 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "vm_service",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-9.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/watcher-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/webkit_inspection_protocol-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "win32",
       "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
@@ -350,13 +512,19 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///C:/Users/HOME/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "notenow",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-05-11T05:25:52.889836Z",
+  "generated": "2023-05-20T06:10:09.976929Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

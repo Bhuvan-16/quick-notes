@@ -71,6 +71,7 @@ MERGED from [:firebase_analytics] D:\Flutter\notenow\build\firebase_analytics\in
 MERGED from [:firebase_auth] D:\Flutter\notenow\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] D:\Flutter\notenow\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] D:\Flutter\notenow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:sqflite] D:\Flutter\notenow\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:fluttertoast] D:\Flutter\notenow\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] D:\Flutter\notenow\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\HOME\.gradle\caches\transforms-3\27d6445aec3fd80f08088200c301c43a\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
@@ -154,6 +155,8 @@ MERGED from [:cloud_firestore] D:\Flutter\notenow\build\cloud_firestore\intermed
 MERGED from [:cloud_firestore] D:\Flutter\notenow\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\Flutter\notenow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\Flutter\notenow\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] D:\Flutter\notenow\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] D:\Flutter\notenow\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:fluttertoast] D:\Flutter\notenow\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:fluttertoast] D:\Flutter\notenow\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\Flutter\notenow\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41

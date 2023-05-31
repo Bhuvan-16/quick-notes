@@ -1,1 +1,1 @@
-enum MenuAction { logout }
+enum MenuAction { about_us ,logout }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notenow/constants/routes.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({super.key});
